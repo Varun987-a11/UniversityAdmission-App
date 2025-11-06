@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Application Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="header">
+    <h1>🏛️ Engineering Application</h1>
+    <p>Complete your details for the Engineering program.</p>
+  </div>
+  <div class="container">
+    <h2>Engineering Application Form</h2>
+    <form id="regForm" action="submit.php" method="POST">
+      <input type="hidden" name="degree" value="Engineering">
+
+      <label for="branch">Select Engineering Branch:</label>
+      <select id="branch" name="branch" required>
+        <option value="">-- Select Branch --</option>
+        <option value="Computer Science & Engineering">Computer Science & Engineering</option>
+        <option value="Electrical Engineering">Electrical Engineering</option>
+        <option value="Mechanical Engineering">Mechanical Engineering</option>
+        <option value="Civil Engineering">Civil Engineering</option>
+        <option value="Aerospace Engineering">Aerospace Engineering</option>
+      </select>
+
+      <hr> <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your Full Name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter a valid email address" required>
+
+      <label for="phone">Phone Number (10 digits):</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" minlength="10" maxlength="10" placeholder="Enter your phone number" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">-- Select --</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="address">Mailing Address:</label>
+      <textarea id="address" name="address" rows="3" placeholder="Street Address, City, Postal Code" required></textarea>
+
+      <button type="submit" id="submitBtn">Submit Engineering Application</button>
+    </form>
+  </div>
+</body>
+</html>
