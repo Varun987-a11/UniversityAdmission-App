@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Enrollment - Select Program</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    // Simple JavaScript for redirection
+    $(document).ready(function() {
+      $('#degree').change(function() {
+        const selectedDegree = $(this).val();
+        if (selectedDegree) {
+          // Redirect the user to the specific application page
+          window.location.href = selectedDegree; 
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="header">
+    <h1>🏛️ University Enrollment</h1>
+    <p>Please select your primary degree program to proceed with the application.</p>
+  </div>
+  <div class="container">
+    <h2>Select Program Type</h2>
+    <label for="degree">Primary Degree Program:</label>
+    <select id="degree" name="degree" required>
+      <option value="">-- Select Degree Program --</option>
+      <option value="app_engineering.html">Engineering (B.Tech/M.Tech)</option>
+      <option value="app_polytechnic.html">Polytechnic (Diploma)</option>
+      <option value="app_management.html">Management (BBA/MBA)</option>
+    </select>
+    
+    <p style="margin-top: 25px; text-align: center; color: #777;">
+      * You will fill in your personal details on the next page.
+    </p>
+  </div>
+</body>
+</html>
