@@ -1,0 +1,114 @@
+:root {
+  /* Define colors for easy change */
+  --primary-color: #3f51b5; /* Indigo Blue */
+  --primary-hover: #303f9f; 
+  --background-light: #e8eaf6; /* Light Blue Background */
+  --text-dark: #37474f; /* Dark Slate Text */
+  --shadow-color: rgba(63, 81, 181, 0.2); /* Shadow matching primary color */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--background-light);
+  margin: 0;
+  padding: 0;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* --- Header Styling for Formality and Color --- */
+.header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+  margin-bottom: 5px;
+  font-size: 2.2em;
+}
+
+.header p {
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+
+.container {
+  background: white;
+  max-width: 500px; /* Slightly wider */
+  margin: 30px auto 50px auto;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px var(--shadow-color); /* More pronounced shadow */
+  border-top: 5px solid var(--primary-color); /* Formal accent line */
+}
+
+h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 25px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-top: 18px;
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #c5c5c5;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Focus style for better functionality */
+input:focus, textarea:focus, select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px var(--shadow-color);
+  outline: none;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+/* Style for the submission success page (submit.php) */
+.container hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.container p {
+    padding: 5px 0;
+}
+
+.container strong {
+    color: var(--primary-hover);
+}
