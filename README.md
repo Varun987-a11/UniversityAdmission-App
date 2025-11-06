@@ -52,7 +52,7 @@ The application is LIVE and currently accepting mock submissions.
 
 Live URL: 
 
-$$Insert Your Live InfinityFree URL Here: https://www.google.com/search?q=http://varunkumars.infinityfreeapp.com$$
+$$Insert Your Live InfinityFree URL Here: http://varunkumars.infinityfreeapp.com$$
 
 Status: ✅ Fully functional (HTML → PHP → MySQL)
 
